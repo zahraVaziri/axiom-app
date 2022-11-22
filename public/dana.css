@@ -1,0 +1,52 @@
+
+  @font-face {
+       font-family:'dana bold' ;
+       font-weight: normal;
+       font-style: normal;
+       src: url('./font/eot/dana-bold.eot');
+       src: url('./font/woff/dana-bold.woff') format('woff');
+       src: url('./font/woff2/dana-bold.woff2') format('woff2');
+
+  }
+  @font-face {
+       font-family: 'dana light';
+       font-weight: normal;
+       font-style: normal;
+       src: url('./font/eot/dana-light.eot');
+       src: url('./font/woff/dana-light.woff') format('woff');
+       src: url('./font/woff2/dana-light.woff2') format('woff2');
+
+  }
+    @font-face {
+       font-family: 'dana italic';
+       font-weight: normal;
+       font-style: normal;
+       src: url('./font/eot/dana-regularitalic.eot');
+       src: url('./font/woff/dana-regularitalic.woff') format('woff');
+       src: url('./font/woff2/dana-regularitalic.woff2') format('woff2');
+
+  }
+  @font-face {
+       font-family: 'dana regular';
+       font-weight: normal;
+       font-style: normal;
+       src: url('./font/eot/dana-regular.eot');
+       src: url('./font/woff/dana-regular.woff') format('woff');
+       src: url('./font/woff2/dana-regular.woff2') format('woff2');
+
+  }
+   @font-face {
+       font-family: 'dana medium';
+       font-weight: normal;
+       font-style: normal;
+       src: url('./font/eot/dana-medium.eot');
+       src: url('./font/woff/dana-medium.woff') format('woff');
+       src: url('./font/woff2/dana-medium.woff2') format('woff2');
+
+  }
+    @font-face {
+       font-family: 'dima';
+       font-weight: normal;
+       font-style: normal;
+       src: url('./font/dima-arsalan/DimaArsalan.ttf') format('truetype');
+  }

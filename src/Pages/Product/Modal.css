@@ -1,0 +1,40 @@
+.modal-page {
+  position: fixed;
+  background-color: #fff;
+  padding: 1.5rem;
+  z-index: 100;
+  width: 25%;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  left: 5%;
+  top: 5%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  margin-top: 50px;
+  height: 500px;
+  /* overflow-y: scroll; */
+  width: 90vw;
+  max-width: 1170px;
+  justify-content: center;
+}
+.modal-page section {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex: 1 1;
+  padding: 1rem;
+}
+
+.btn-modal{
+  border: none !important;
+  outline: none !important;
+  background-color: transparent;
+  cursor: pointer !important;
+}

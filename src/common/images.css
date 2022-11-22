@@ -1,0 +1,115 @@
+
+.pagination{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+  font-size: 1.2rem;
+  gap: 5px;
+}
+.product:hover  .productDesc{
+  height: 100%;
+}
+.productDesc{
+  height: 70px;
+  overflow-y: hidden;
+}
+.pagination .page-num{
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: 400;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.pagination .page-num:hover{
+  background-color: #6d28d9;
+  color: #fff !important;
+}
+.pagination .active{
+  background-color: #6d28d9;
+}
+.prouductImg{
+  position: relative;
+}
+
+/* .prouductImg a{
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    z-index: 4000;
+    color: rgb(104, 103, 103);
+    background: #fff;
+    padding: 10px;
+    font-size: 1.5rem;
+    display: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border: none;
+    -ms-transition: all 0.3s ease;
+    transform: translateX(-100vh);
+    -webkit-transform: translateX(-100vh);
+    -moz-transform: translateX(-100vh);
+    -ms-transform: translateX(-100vh);
+    -o-transform: translateX(-100vh);
+} */
+
+.prouductImg .search-img-product{
+  cursor: pointer;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    z-index: 40;
+    color: rgb(104, 103, 103);
+    
+    font-size: 16px;
+    margin: 3px;
+   
+}
+.sharj-img-product{
+   cursor: pointer;
+    right: 0px;
+    position: absolute;
+    top: 0px;
+    z-index: 40;
+    color: #fff;
+    font-size: 16px;
+    margin: 3px;
+}
+
+.name-product:hover{
+  
+  color: #aaa;
+}
+.productDesc span{
+  font-size: 12px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  
+  color: #fff;
+  align-self: flex-end;
+}
+/* .productDesc .clicked{
+  border: 3px solid #000 !important;
+  background-color: brown !important;
+  padding: 30px;
+} */
+/* .heart{
+  border: 3px solid #000;
+   background-color: brown !important;
+   padding: 30px;
+} */
+.productDesc .active{
+  color: red !important; 
+}
+ul{
+  padding-left: 0 !important;
+}

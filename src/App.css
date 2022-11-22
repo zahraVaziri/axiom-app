@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+.productList {
+  margin-top: 50px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  max-width: 1170px;
+  width: 90vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.product {
+  border-radius: 5px;
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #efefef;
+}
+.prouductImg {
+  width: 95%;
+}
+.prouductImg img {
+  width: 100%;
+  height: 210px;
+}
+.img-hover-zoom {
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img-hover-zoom--brightness img {
+  transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(90%);
+  -webkit-filter: brightness(90%);
+  -webkit-transition: transform 1s, filter 1.5s ease-in-out;
+  -moz-transition: transform 2s, filter 1.5s ease-in-out;
+  -ms-transition: transform 2s, filter 1.5s ease-in-out;
+  -o-transition: transform 2s, filter 1.5s ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.img-hover-zoom--brightness:hover img {
+  filter: brightness(100%);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.desc {
+  border-top: 1px solid #ccc;
+  width: 100%;
+}
+
+.productDesc {
+  padding: 10px;
   display: flex;
   flex-direction: column;
+  width: 100%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btns {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 6px 15px;
+  background-color: #ede9fe;
+  color: #6d28d9;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.price-product {
+  color: #6d28d9;
+}
+.primary {
+  padding: 0.6rem;
+  background: linear-gradient(
+    333deg,
+    rgb(43, 1, 121) 0%,
+    rgb(43, 1, 121) 0%,
+    rgb(121, 56, 242) 100%,
+    rgb(121, 56, 242) 100%
+  );
+  color: #fff !important;
+  font-family: "dana regular" !important;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+  color: #444;
+}
+
+.content {
+  display: grid;
+  margin: 0 auto;
+  gap: 1rem 3rem;
+  grid-template-columns: 23fr 77fr;
+  max-width: 1280px;
+}
+
+/* ===============media================ */
+@media only screen and (max-width: 992px) {
+  .productList {
+    width: 62vw;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 575px) {
+  .product {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .product {
+    width: 100% !important;
+    margin-bottom: 0.5rem;
   }
 }

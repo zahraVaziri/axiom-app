@@ -1,0 +1,12 @@
+.select {
+  width: 100%;
+}
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  
+}
+.selectContainer span {
+  display: block;
+  
+}

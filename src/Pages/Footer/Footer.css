@@ -1,0 +1,32 @@
+.footer {
+  background-color: #f0f0f0;
+  
+}
+.footer .icon {
+  color: #6d28d9 !important;
+}
+.footer a:hover{
+  color:#aaa !important ;
+}
+.namad-img{
+  justify-content: flex-end ;
+}
+
+@media only screen and (max-width: 899px) {
+  .footer .link{
+    display: none;
+  }
+}
+@media only screen and (max-width: 368px) {
+  .footer .link-footer{
+    display: none;
+  }
+  .namad-img{
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  .logo-footer{
+    display: none;
+    width: 100% !important;
+  }
+}

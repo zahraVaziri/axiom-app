@@ -1,0 +1,23 @@
+.sidebar__card {
+  background-color: #fff;
+  border: 1px solid #efefef;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+.sidebar__category {
+  background-color: #fff;
+  border: 1px solid #efefef;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.sidebar__search .search {
+  width: auto;
+}
+.sidebar__brand .brand {
+  width: auto;
+}
+
+.category__items li {
+  margin: 0.5rem 0;
+}

@@ -1,0 +1,90 @@
+.cartItemList {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);
+  flex: 1;
+  padding: 1rem;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(204, 204, 204, 0.74);
+}
+
+.cartItem .itemImg {
+  width: 100px;
+  height: auto;
+}
+.cartItem .itemImg img {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+.cartSummery {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);
+  margin-top: 1rem;
+  margin-left: 3rem;
+  margin-right: 2rem;
+}
+.cartCenter {
+  margin-top: 50px;
+  display: flex;
+  width: 90vw;
+  max-width: 1170px;
+  justify-content: center;
+}
+
+.summeryItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.summeryItem.net {
+  border-top: 2px solid rgba(204, 204, 204, 0.74);
+  padding-top: 3px;
+}
+
+.btnGroups button {
+  outline: none;
+  color: #6d28d9;
+  border: 1px solid #6d28d9;
+  padding: 5px 10px;
+  background-color: #fff;
+}
+
+.btnGroups button:first-child {
+  border-radius: 0 5px 5px 0;
+}
+.btnGroups button:last-child {
+  border-radius: 5px 0 0 5px;
+}
+.btnGroups button:nth-child(2) {
+  border-left: 0;
+  border-right: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .cartSummery {
+  
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}}
+
+@media only screen and (max-width: 375px) {
+  .cartItem {
+  flex-direction: column;
+
+}}
