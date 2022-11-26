@@ -1,4 +1,4 @@
-.modal-page {
+/* .modal-page {
   position: fixed;
   background-color: #fff;
   padding: 1.5rem;
@@ -21,7 +21,7 @@
   margin-top: 50px;
   height: 500px;
   /* overflow-y: scroll; */
-  width: 90vw;
+  /* width: 90vw;
   max-width: 1170px;
   justify-content: center;
 }
@@ -30,11 +30,11 @@
   border: 1px solid #ccc;
   flex: 1 1;
   padding: 1rem;
-}
+}  */
 
 .btn-modal{
   border: none !important;
   outline: none !important;
   background-color: transparent;
-  cursor: pointer !important;
+  cursor:pointer
 }

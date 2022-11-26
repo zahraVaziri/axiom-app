@@ -11,6 +11,7 @@ import Filter from "../../component/Filter/Filter";
 import Modal from "../Modal/Modal";
 import { BsRulers } from "react-icons/bs";
 import { Helmet } from "react-helmet";
+import './product.css'
 const Product = () => {
   const location = useLocation()
   const {data} = location.state
