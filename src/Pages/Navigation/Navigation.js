@@ -15,8 +15,6 @@ const Navigation = () => {
   const { cart } = useCart();
   const userData = useAuth();
   const { fav } = useFav();
-  // const [active, setActive] = useState(false);
-  // const [isOpen, setOpen] = useState(false);
   const theme = useTheme();
   const isTabletSize = useMediaQuery(theme.breakpoints.down("md"));
   const LayoutDispatch = useLayoutDispatch();

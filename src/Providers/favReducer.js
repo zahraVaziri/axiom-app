@@ -1,4 +1,3 @@
-import * as data from "../data";
 import _ from "lodash";
 const addProductToFav = (state, payload) => {
   const updatedFav = [...state.fav];

@@ -107,14 +107,10 @@ button:disabled {
   max-width: 1280px;
 }
 
-.ul-menu{
- 
-
-}
-.ul-menu li{
+.ul-menu li {
   padding: 15px 20px !important;
 }
-.ul-menu li:hover{
+.ul-menu li:hover {
   background-color: #ccc;
 }
 /* ===============media================ */

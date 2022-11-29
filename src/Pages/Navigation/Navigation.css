@@ -88,10 +88,7 @@
   .mainNavigation{
     position: relative;
   }
-  /* .mainNavigation nav {
- flex-direction: row-reverse;
-
-} */
+ 
 .navlink{
   display: none !important;
 }

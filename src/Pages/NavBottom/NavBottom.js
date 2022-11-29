@@ -1,8 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { useCart } from "../../Providers/CartProdvicer";
-import { BsCart3, BsFillPersonPlusFill, BsHeart, BsList, BsPersonCheckFill, BsShop } from "react-icons/bs";
+import { BsCart3, BsFillPersonPlusFill, BsHeart, BsPersonCheckFill, BsShop } from "react-icons/bs";
 import "./NavBottom.css";
-import { useState } from "react";
 import { useFav } from "../../Providers/FavorideProvider";
 import { useAuth } from "../../Providers/AuthProvider";
 const NavBottom = () => {
@@ -62,14 +61,7 @@ const NavBottom = () => {
               </p>
             </NavLink>
           </li>
-          {/* <li className="humlink">
-            <NavLink
-              to="/#"
-              className={({ isActive }) => (isActive ? "activeLink" : "fs-3")}
-            >
-              <BsList />
-            </NavLink>
-          </li> */}
+          
         </ul>
       </div>
     </div>

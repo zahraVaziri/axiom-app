@@ -1,5 +1,4 @@
 import React from "react";
-// import useStyles from './styles';
 import { Drawer } from "@mui/material";
 import {
   toggleDrawer,
@@ -7,7 +6,11 @@ import {
   useLayoutState,
 } from "../Providers/LayoutContext";
 import { Link } from "react-router-dom";
-import { BsFillBagXFill, BsFillChatRightTextFill, BsShop } from "react-icons/bs";
+import {
+  BsFillBagXFill,
+  BsFillChatRightTextFill,
+  BsShop,
+} from "react-icons/bs";
 const MenuDrawer = () => {
   const { drawerOpen } = useLayoutState();
   const LayoutDispatch = useLayoutDispatch();
@@ -22,7 +25,9 @@ const MenuDrawer = () => {
       >
         <ul className="ul-menu">
           <li>
-            <span><BsShop/></span>
+            <span>
+              <BsShop />
+            </span>
             <Link
               className="my-4 p-2"
               to="/"
@@ -35,7 +40,9 @@ const MenuDrawer = () => {
           </li>
 
           <li>
-            <span><BsFillChatRightTextFill/></span>
+            <span>
+              <BsFillChatRightTextFill />
+            </span>
             <Link
               className="my-4 p-2"
               to="/guide"
@@ -48,7 +55,9 @@ const MenuDrawer = () => {
           </li>
 
           <li>
-            <span><BsFillBagXFill/></span>
+            <span>
+              <BsFillBagXFill />
+            </span>
             <Link
               className="my-4 p-2"
               to="/proce"

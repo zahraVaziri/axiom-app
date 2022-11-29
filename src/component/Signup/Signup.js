@@ -2,7 +2,6 @@ import Input from "../../common/Input";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import "./signup.css";
-// import { Link, withRouter } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { signupUser } from "../../services/sinupService";
 import { useAuthActions, useAuth } from "../../Providers/AuthProvider";
@@ -52,7 +51,6 @@ const SignupForm = (props) => {
   }, [redirect, auth]);
   const onSubmit = async (values) => {
     const { name, email, phoneNumber, password } = values;
-    // console.log(values);
     const userData = {
       name,
       email,

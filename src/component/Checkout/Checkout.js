@@ -1,6 +1,5 @@
 import { useAuth } from "../../Providers/AuthProvider";
 import { useCart } from "../../Providers/CartProdvicer";
-import "./checkout.css";
 import { Link } from "react-router-dom";
 import { Col } from "react-bootstrap";
 const Checkout = () => {

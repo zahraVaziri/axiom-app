@@ -2,7 +2,6 @@ import React from "react";
 import { Col } from "react-bootstrap";
 import { BsArrowBarRight } from "react-icons/bs";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
-import { useCart } from "../../Providers/CartProdvicer";
 import Account from "./Account";
 
 const Profile = () => {
