@@ -4,7 +4,6 @@
   align-items: center;
   margin: 20px 0;
   position: relative;
-
 }
 .formControl input {
   outline: none;
@@ -17,37 +16,37 @@
   padding: 10px 5px;
   color: #6d28d9;
   width: 665px !important;
-  margin-left: 12px;
-   font-family: 'dana regular' !important;
+  margin: 0 12px;
+  font-family: "dana regular" !important;
 }
 
 .formControl input:focus {
   border: 2px solid #6d28d9;
 }
-.showProduct{
- top: 138px;
-    position: absolute;
-    width: 100%;
- 
+.showProduct {
+  top: 138px;
+  position: absolute;
+  width: 100%;
+
   background-color: #fff;
   box-shadow: 2px 2px 3px #ccc;
   z-index: 99;
 }
 .searchItemList {
   display: flex;
-  
+
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
   flex: 1;
   padding: 1rem;
   overflow-x: scroll;
-
 }
-.searchItemAdd{
+.searchItemAdd {
   display: block;
 }
-.serarchAdd{
+.serarchAdd {
   display: none;
 }
 .searchItem {
@@ -55,7 +54,7 @@
   align-items: center;
   border-left: 1px solid #ccc;
   margin: 5px;
-  padding: 0  10px;
+  padding: 0 10px;
 }
 
 .searchItem .itemImg {
@@ -74,7 +73,8 @@
   flex-direction: column;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
   margin-top: 1rem;
   margin-left: 3rem;
   margin-right: 2rem;
@@ -120,14 +120,13 @@
 
 @media only screen and (max-width: 992px) {
   .searchSummery {
-  
-  margin-left: 1rem;
-  margin-right: 1rem;
-
-}}
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 
 @media only screen and (max-width: 375px) {
   .searchItem {
-  flex-direction: column;
-
-}}
+    flex-direction: column;
+  }
+}

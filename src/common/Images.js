@@ -2,34 +2,22 @@ import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import { useCart, useCartActions } from "../Providers/CartProdvicer";
-import { checkInCart } from "../utils/checkInCart";
 import "./images.css";
 import { BsCheck2All, BsHeart, BsSearch } from "react-icons/bs";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Tooltip from "react-bootstrap/Tooltip";
 import { checkInFav } from "../utils/checkInFav";
 import { useFav, useFavActions } from "../Providers/FavorideProvider";
 import http from "../services/httpService";
-import axios from "axios";
-import { getProductsById } from "../DataSendProduct";
-const Images = ({  order }) => {
+
+const Images = ({ order }) => {
   const { fav } = useFav();
   const dispatch = useFavActions();
-   const [currentItems, setCurrentItems] = useState([]);
-     const [categories, setCategories] = useState([]);
-const [currentHoveredId, setCurrentHoveredId] = useState("");
-   useEffect(() => {
-     http.get("/product").then((res) => setCategories(res.data));
-   }, []);
+  const [currentItems, setCurrentItems] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [currentHoveredId, setCurrentHoveredId] = useState("");
+  useEffect(() => {
+    http.get("/product").then((res) => setCategories(res.data));
+  }, []);
 
-// useEffect(() => {
-//   axios
-//     .get("https://fakestoreapi.com/products/categories")
-//     .then((res) => console.log(res.data));
-// }, []);
-// const data = getProductsById(categories,id);
-  
   const onMouseOver = (id) => {
     setCurrentHoveredId(id);
   };
@@ -52,24 +40,11 @@ const [currentHoveredId, setCurrentHoveredId] = useState("");
     setItemOffset(newOffset);
   };
 
-  const[active,setActive] = useState('')
   const addProductToFav = (product) => {
     toast.info(`${product.name} مورد علاقه شماست`);
     dispatch({ type: "ADD_TO_FAVORAT", payload: product });
-    
-
-    // const clicked = product.id;
-    // if (active === clicked) {
-    //   setActive("");
-    // } else {
-    //   setActive(clicked);
-    // }
   };
-  // const renderTooltip = (props) => (
-  //   <Tooltip id="button-tooltip" {...props}>
-  //     انتخاب سریع
-  //   </Tooltip>
-  // );
+
   return (
     <>
       <div className="mt-5">
@@ -98,22 +73,14 @@ const [currentHoveredId, setCurrentHoveredId] = useState("");
                       onMouseOut={onMouseOut}
                     />
                   </Link>
-                  {/* <OverlayTrigger
-                    placement="bottom"
-                    delay={{ show: 250, hide: 400 }}
-                    overlay={renderTooltip}
-                  > */}
+
                   <Link
                     to="/"
                     className="search-img-product"
                     onClick={order}
                   ></Link>
-                  {/* </OverlayTrigger> */}
-                  <div className="sharj-img-product">
-                    {/* <span class="badge bg-success ">
-                      {product.description[0].support1}
-                    </span> */}
-                  </div>
+
+                  <div className="sharj-img-product"></div>
                 </div>
 
                 <div className="desc">
@@ -153,16 +120,6 @@ const [currentHoveredId, setCurrentHoveredId] = useState("");
                         )}
                       </button>
                     </div>
-                    {/* <button
-                      onClick={() => addProductHandler(product)}
-                      className={"btns primry"}
-                    >
-                      {checkInCart(cart, product) ? (
-                        <Link to={"/cart"}> مشاهده در سبد خرید</Link>
-                      ) : (
-                        "انتخاب محصول"
-                      )}
-                    </button> */}
                   </div>
                 </div>
               </section>

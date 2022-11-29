@@ -3,65 +3,63 @@
 body {
   overscroll-behavior-y: none;
   margin: 0;
-  font-family: 'dana regular' !important;
+  font-family: "dana regular" !important;
   font-weight: 400 !important;
   direction: rtl !important;
-   background-color: #f6f6f6;
-    
+  background-color: #f6f6f6;
+
   line-height: 1.5 !important;
 }
-p{
-    margin: 0 !important;
+p {
+  margin: 0 !important;
 }
-.btns{
-    font-family: 'dana regular' !important;
-
+.btns {
+  font-family: "dana regular" !important;
 }
-.Toastify .Toastify__toast{
-  font-family: 'dana regular' !important;
+.Toastify .Toastify__toast {
+  font-family: "dana regular" !important;
   font-size: 14px;
   font-weight: 400;
 }
 .color-primery {
   color: #6d28d9;
 }
-.breadcrumb-item+.breadcrumb-item::before {
-    float: right !important;
-    padding: 2px;
-  }
-  
-  .image-gallery-slide .image-gallery-image {
-    max-height: calc(74vh - 80px) !important;
+.breadcrumb-item + .breadcrumb-item::before {
+  float: right !important;
+  padding: 2px;
 }
-.image-gallery-icon:hover{
+
+.image-gallery-slide .image-gallery-image {
+  max-height: calc(74vh - 80px) !important;
+}
+.image-gallery-icon:hover {
   color: #6d28d9 !important;
 }
 /* --------------notfound------------- */
-.notfound{
+.notfound {
   margin: 8rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.notfound header{
+.notfound header {
   position: relative;
-    padding-bottom: 60px;
-    font-size: clamp(32px, 4.2vw, 82px);
-    
+  padding-bottom: 60px;
+  font-size: clamp(32px, 4.2vw, 82px);
 }
-.notfound header::before{
-    content: "404";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: #ccc;
-    font-weight: 700;
-    font-size: 5em;
-    line-height: 1;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
+.notfound header::before {
+  content: "404";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #ccc;
+  font-weight: 700;
+  font-size: 5em;
+  line-height: 1;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }

@@ -1,10 +1,10 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Layout from "./Layout/Layout";
 import HomePage from "./Pages/HomePage";
 import Cart from "./Pages/Cart";
 import CartProvider from "./Providers/CartProdvicer";
-import { ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Checkout from "./component/Checkout/Checkout";
 import LoginPage from "./Pages/LoginPage";
@@ -19,11 +19,10 @@ import { LayoutProvider } from "./Providers/LayoutContext";
 import useDocumentTitle from "./hooks/useDocumentTitle";
 import AuthProvider from "./Providers/AuthProvider";
 import Profile from "./Pages/Profile/Profile";
-import addNotification from 'react-push-notification'
-import logo from './logo.svg';
-import { useEffect } from "react";
+import addNotification from "react-push-notification";
+import logo from "./logo-notif.png";
+import { Notifications } from "react-push-notification";
 function Home() {
-
   useDocumentTitle("مجموعه پینگ");
   return <HomePage />;
 }
@@ -63,18 +62,20 @@ function NotFounds() {
   return <NotFound />;
 }
 
+window.onload = function () {
+  addNotification({
+    title: "به فروشگاه ما خوش آمدید",
+    subtitle: "به فروشگاه ما خوش آمدید",
+    message: " کلیک کن که بریم تو لینکدین من :)",
+    theme: "red", //optional, default: undefined
+    duration: 5000, //optional, default: 5000,
+    icon: logo,
+      onClick: ()=> window.location = "https://www.linkedin.com/in/zahra-vaziri-a3a024222/",
+    native: true, // when using native, your OS will handle theming.
+  });
+};
 
-  
 function App() {
-  // const clickToNotify = () => {
-  //   addNotification({
-  //     title: "www",
-  //     message: "eeeee",
-  //     duration: 4000,
-  //     icon: logo,
-  //     native: true,
-  //   });
-  // };
   return (
     <BrowserRouter>
       <AuthProvider>
@@ -82,8 +83,8 @@ function App() {
           <CartProvider>
             <FavProvider>
               <ToastContainer />
+              <Notifications />
               <Layout>
-                
                 <Routes>
                   <Route path="/favoride" element={<Fav />} />
                   <Route path="/guide" element={<GuidePage />} />

@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import { Breadcrumb, Carousel, Col, Row } from "react-bootstrap";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Breadcrumb,  Col, Row } from "react-bootstrap";
+import { Link, useLocation } from "react-router-dom";
 import { toast } from "react-toastify";
-import { ProductServise } from "../../data";
 import { useCart, useCartActions } from "../../Providers/CartProdvicer";
 import { checkInCart } from "../../utils/checkInCart";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-import Filter from "../../component/Filter/Filter";
 import Modal from "../Modal/Modal";
 import { BsRulers } from "react-icons/bs";
 import { Helmet } from "react-helmet";
@@ -75,7 +73,7 @@ const Product = () => {
               <h3 className="my-3">{data.name}</h3>
               <h4 className="mb-3 color-primery">{data.price} تومان</h4>
               <p className="mb-3 text-black-50">{`اندازه لژ : ${data.Lodge} سانتی متر`}</p>
-              <Filter />
+            
               <div>
                 <span className="btn-modal" onClick={purchasedHandler}>
                   <BsRulers className="mx-2" />

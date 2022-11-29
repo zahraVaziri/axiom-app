@@ -21,10 +21,10 @@ const ScrollToTop = () => {
   };
   return (
     <div className="top-to-btm">
-      {" "}
+      
       {showTopBtn && (
         <BsChevronUp className="icon-position icon-style" onClick={goToTop} />
-      )}{" "}
+      )}
     </div>
   );
 };

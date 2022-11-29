@@ -1,5 +1,6 @@
 import React from "react";
 import { Col } from "react-bootstrap";
+import { BsArrowBarRight } from "react-icons/bs";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import { useCart } from "../../Providers/CartProdvicer";
 import Account from "./Account";
@@ -18,14 +19,16 @@ const Profile = () => {
       <main className="container">
         <section className=" row mt-3">
           <Col md={4} sm={12}>
-            <section className="cartItemList pb-5">
+            <section className="cartItemList pb-4">
               <div>
                 <div className="my-2">
                   <Link to={"/profile/account"}>حساب کاربری</Link>
                 </div>
 
                 <div className="my-3">
-                  <button onClick={exitHandler}>خروج از حساب کاربری</button>
+                  <button className="out-btn" onClick={exitHandler}>
+                    <BsArrowBarRight /> خروج از حساب کاربری
+                  </button>
                 </div>
               </div>
             </section>
