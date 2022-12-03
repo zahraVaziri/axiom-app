@@ -7,10 +7,15 @@ const Search = () => {
   const [contacts, setContacts] = useState([]);
   const [allData, setAllData] = useState(null);
 
+   const handelClick = () => {
+     setvalue("");
+     console.log(value);
+   };
   useEffect(() => {
     const fetchContact = async () => {
       const { data } = await http.get("/product");
-      setContacts(data);
+      
+      
       setAllData(data);
     };
     try {
@@ -27,15 +32,13 @@ const Search = () => {
           .toLowerCase()
           .includes(search.toLowerCase());
       });
+      console.log(filterContants);
       setContacts(filterContants);
     } else {
       setContacts(allData);
     }
   };
-  const handelClick = () => {
-    setvalue("");
-    console.log(value);
-  };
+ 
 
   return (
     <>
